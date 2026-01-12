@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doki Doki Literature Club</title>
-    <link rel="stylesheet" href="style.css"> <!-- Adjust the path if necessary -->
+    <link rel="stylesheet" href="frontend/estilos/main.css"> <!-- Path to the main CSS file -->
+    <script src="frontend/js/main.js" defer></script> <!-- Add the path to your primary JS file -->
 </head>
 <body>
-    <script src="frontend/scripts/gameStart.js"></script> <!-- Adjust the path if necessary -->
+    <h1>Doki Doki Literature Club</h1>
+    <div id="game-container">
+        <div id="dialogue"></div>
+        <div id="choices"></div>
+    </div>
+    <script>
+        // Start the game by calling the main function from main.js
+        document.addEventListener("DOMContentLoaded", function() {
+            startGame(); // Ensure startGame() is defined in main.js
+        });
+    </script>
 </body>
 </html>
